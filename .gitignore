@@ -1,0 +1,13 @@
+# Environment variables
+.env
+
+# Session files
+session*
+
+# Output data
+data/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
