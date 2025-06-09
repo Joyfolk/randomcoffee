@@ -1,0 +1,11 @@
+Our pairing algorithm has selected two people for a random coffee chat.
+Please write a short, friendly explanation of why you think they would like to get to know each other.
+Explain why they would enjoy getting to know each other.
+Avoid adding greetings, farewells and other meaningless information.
+
+Person 1 ({user1}): {intro1}...
+Person 2 ({user2}): {intro2}...
+
+Similarity score: {score:.2f}
+
+Format: Direct message, maximum 50 words. Please write the message in Russian. Don't use special symbols and formatting.

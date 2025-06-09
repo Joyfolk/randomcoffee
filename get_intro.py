@@ -8,11 +8,10 @@ from telethon.tl.types import PeerChannel
 
 dotenv.load_dotenv()
 
-API_ID = int(os.getenv('API_ID', 0))
-API_HASH = os.getenv('API_HASH', '')
-GROUP_ID_ENV = os.getenv('GROUP_ID', None)  # Allow setting in .env file
+API_ID = int(os.getenv('TELEGRAM_API_ID', 0))
+API_HASH = os.getenv('TELEGRAM_API_HASH', '')
 if not API_ID or not API_HASH:
-    raise EnvironmentError("Please set API_ID and API_HASH in environment variables or .env file")
+    raise EnvironmentError("Please set TELEGRAM_API_ID and TELEGRAM_API_HASH in environment variables or .env file")
 
 parser = argparse.ArgumentParser(description='Fetch messages with a specific hashtag from a Telegram group chat or thread')
 parser.add_argument('--group', '-g', required=True,
