@@ -285,18 +285,13 @@ async def main():
         print(f"Links: {user1.link} | {user2.link}")
         message = await message_generator.generate_pairing_message(user1, user2, score)
         print(f"Pairing Message:\n{message}")
-        #
-        # # Clean up the message for CSV (remove newlines and quotes)
-        # clean_message = message.replace('\n', ' ').replace('\r', ' ').strip()
 
-        # Add to CSV data
         csv_row = [
             user1.username,
             user1.link,
             user2.username,
             user2.link,
             message
-            # clean_message
         ]
         csv_data.append(csv_row)
 
